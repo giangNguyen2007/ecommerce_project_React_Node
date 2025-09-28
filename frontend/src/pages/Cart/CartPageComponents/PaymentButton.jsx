@@ -44,7 +44,7 @@ const PaymentButton = ({quantity}) => {
   return (
     <div className="pay-btn-wrapper">
         <StripeCheckout
-            name='Akatsuki Shop'
+            name='Fictive Payment'
             billingAddress
             shippingAddress
             amount = {quantity * 100}

@@ -5,8 +5,8 @@ import useAuth from '../../customHooks/useAuth';
 
 const Login = () => {
    
-    const [username, setUsername] = useState('giang-nguyen4')
-    const [email, setEmail] = useState('akatsuki@gmail.com')
+    const [username, setUsername] = useState('guest')
+    const [email, setEmail] = useState('guest@gmail.com')
     const [password, setPassword] = useState('12345')
     const {authenticate, error, isLoading} = useAuth();
     // const {loadUserCart} = useChangeCart();
@@ -38,7 +38,7 @@ const Login = () => {
                   <input 
                     type="userName" 
                     onChange={(e) => setUsername(e.target.value)} 
-                    value={"giang-nguyen4"} 
+                    value={username} 
                   />
               </div>
               
@@ -47,7 +47,7 @@ const Login = () => {
                   <input 
                     type="email" 
                     onChange={(e) => setEmail(e.target.value)} 
-                    value={"akatsuki@gmail.com"} 
+                    value={email} 
                   />
               </div>
 
@@ -56,7 +56,7 @@ const Login = () => {
                   <input 
                     type="password" 
                     onChange={(e) => setPassword(e.target.value)} 
-                    value={"12345"} 
+                    value={password} 
                   />
               </div>
             </div>

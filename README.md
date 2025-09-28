@@ -1,14 +1,19 @@
-# ecommerce_project_React_Node
-Project Fullstack - frontend in React - backend in Node / Express
+
+
+
+
 
 
 # Launch backend application
 
-Execute following commands inside the backend root folder to build docker image and launch the backend container
 
 ```bash
 
 # pwd = /backend
+
+# create .env file by copying .env.example
+# this is to simulate the insertion of secrets into .env file
+cp .env.example .env
 
 # build docker image from source code
 docker-compose build

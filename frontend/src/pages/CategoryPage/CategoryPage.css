@@ -1,0 +1,28 @@
+
+
+.prod-category-wrapper {
+    margin-top: 20px;
+}
+/* =========== LEFT SECTION ======= */
+
+.prod-category-wrapper .left-section{
+    margin-left: 15px;
+}
+
+/* =========== RIGHT SECTION ======= */
+
+
+.prod-category-wrapper .right-section{
+    margin-left: 15px;
+}
+
+    .prod-category-wrapper .right-section .sort-container{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+        .prod-category-wrapper .right-section .sort-container .sort-selector{
+            background-color: lightgray;
+            border-radius: 5px;
+        }

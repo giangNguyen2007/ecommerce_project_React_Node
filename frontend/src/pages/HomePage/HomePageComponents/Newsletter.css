@@ -1,0 +1,38 @@
+
+/* ==== NEWSLETTER === */
+
+
+.newsletter-container {
+    background-color: rgb(218, 231, 213);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-container h1 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.newsletter-container p {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.input-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-container input{
+    width: 250px;
+    /* display: inline-block; */
+}
+
+.input-container .button{
+    border: 0.5px solid rgb(21, 94, 86);
+}

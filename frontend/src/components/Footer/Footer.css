@@ -1,0 +1,93 @@
+
+/* === Footer==== */
+
+.footer-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ===== Left ===== */
+.left-container{
+    width: 350px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.left-container .title{
+    font-size: 20px;
+    font-weight: 200;
+    border-bottom: 1px solid rgb(21, 94, 86);
+}
+
+.left-container .description{
+    margin: 10px 0;
+    text-align: justify;
+}
+
+
+.left-container .social-container {
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+}
+
+.left-container .logo{
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 200;
+
+}
+
+/* ===== Center ===== */
+.center-container{
+    width: 350px;
+    padding: 10px;
+}
+
+.center-container .title{
+    font-size: 20px;
+    font-weight: 200;
+    border-bottom: 1px solid rgb(21, 94, 86);
+}
+
+
+
+.center-container ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.center-container li {
+    width: 50%;
+    margin-top: 5px;
+}
+
+/* ===== Right ===== */
+
+.right-container .title{
+    font-size: 20px;
+    font-weight: 200;
+    border-bottom: 1px solid rgb(21, 94, 86);
+    margin-bottom: 10px;
+}
+
+.right-container{
+    width: 350px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.right-container .contact-item {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* .right .text {
+    
+} */

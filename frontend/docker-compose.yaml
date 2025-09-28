@@ -1,0 +1,11 @@
+
+services:
+
+  shopee-frontend:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: shopee-frontend:1.0
+    container_name: shopee-frontend
+    ports:
+      - "80:80"

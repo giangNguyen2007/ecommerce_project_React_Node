@@ -1,0 +1,28 @@
+
+.select-add-cart-wrapper {
+    /* display: flex; */
+    margin: 40px 20px;
+    
+}
+
+
+/* ===== Add to cart section ======= */
+.select-add-cart-wrapper .add-cart-container{
+    display: flex;
+    margin: 20px 0px;
+}
+
+.select-add-cart-wrapper .amount-cont{
+    display: flex;
+    gap: 20px;
+    margin-right: 40px;
+    align-items: center;
+}
+
+
+
+
+
+
+
+

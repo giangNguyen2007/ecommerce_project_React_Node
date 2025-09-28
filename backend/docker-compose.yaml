@@ -1,0 +1,14 @@
+services:
+
+  shopee-backend:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: shopee-backend:1.0
+    container_name: shopee-backend
+
+    environment:
+      FRONTEND_URL: http://localhost:80
+
+    ports:
+      - "4000:4000"

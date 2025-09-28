@@ -1,0 +1,72 @@
+
+.main-section {
+    display: flex;
+    margin: 40px 20px;
+    
+}
+
+    .main-section .img-container{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border: 0.5px solid  lightgray;
+        border-radius: 20px;
+    }
+
+        .main-section .left-img{
+            width: 400px;
+            height: 400px;
+            object-fit: contain;
+        }
+
+    .main-section .info-container{
+        padding: 20px;
+        width: 400px;
+    }
+
+        .main-section .product-title{
+            padding: 5px;
+            font-size: 40px;
+            font-weight: bold;
+            border-bottom: 1px solid rgb(21, 94, 86);
+        }
+
+        .main-section .product-desc{
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        .main-section .price{
+            padding: 5px;
+            font-size: 30px;
+        }
+
+/* =========== Comment section ============= */
+
+.comment-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 40px 20px;
+}
+
+    /* FOR INFORMATION */
+
+    /* LEFT */
+    /* .comment-form-container{
+        width: auto;
+    } */
+
+    /* RIGHT */
+    /* .comment-list-wrapper{
+        width: 400px;
+        margin: 20px;
+    } */
+
+
+
+
+
+

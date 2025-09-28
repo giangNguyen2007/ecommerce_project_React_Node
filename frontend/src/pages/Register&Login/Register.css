@@ -1,0 +1,52 @@
+
+
+.login-register-container {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+    .login-register-container form {
+        width: 500px;
+        padding: 20px;
+        border: 1px solid rgb(21, 94, 86);
+        border-radius: 10px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+        .login-register-container .input-container {
+            width: 500px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .login-register-container .input-item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+                .login-register-container label {
+                    width: 100px;
+                    padding: 5px;
+                }
+
+                .login-register-container input {
+                    width: 250px;
+                    padding: 5px;
+                    border: 0.5px solid rgb(21, 94, 86);
+                    margin: 10px;
+                }
+
+        .login-register-container button{
+            width: 200px;
+        }

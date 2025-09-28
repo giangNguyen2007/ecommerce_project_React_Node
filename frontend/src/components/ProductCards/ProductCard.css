@@ -1,0 +1,80 @@
+.product-card{
+    padding: 20px;
+    border-radius: 10px;
+    border: 0.5px solid lightgray;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover{
+    transition: 0.3s;
+    transform: scale(1.03);
+}
+
+/* ==== image & title ===== */
+.product-card img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+.product-card .title{
+    width: 200px;
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* ==== info section =========== */
+
+.product-card .info-product{
+    width: 230px;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+
+.product-card .upper-wrapper {
+    width: 70px;
+}
+
+.product-card .price {
+    font-size: 25px;
+}
+
+/* ====== select & add cart section == */
+
+.product-card .select-add-cart-wrapper {
+    /* display: flex; */
+    margin: 10px 5px;
+    width: 100%;
+    
+}
+
+.product-card .select-add-cart-wrapper .color-palette{
+    margin-right: 20px;
+}
+
+.product-card .select-add-cart-wrapper span{
+    display: none;
+}
+
+/* ====== quantity and add to cart section ===== */
+
+.product-card .select-add-cart-wrapper .add-cart-container{
+    margin: 10px 0px;
+}
+
+.product-card .select-add-cart-wrapper .product-quantity{
+    font-size: 15px;
+}
+.product-card .select-add-cart-wrapper .plus-minus{
+    font-size: 20px;
+}
+
+.product-card .select-add-cart-wrapper .amount-cont{
+    gap: 10px;
+    margin-right: 20px;
+}

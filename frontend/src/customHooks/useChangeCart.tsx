@@ -17,15 +17,15 @@ const useChangeCart = () => {
 
         // debugger;
 
-    const cartProduct : ICartProduct = {
-            id : product.id,
-            title : product.title,
-            img : product.img,
-            key : product.id + '&' + selectColor + '&' + selectSize,
-            color: selectColor,
-            size: selectSize,
-            price: product.price
-        }
+        const cartProduct : ICartProduct = {
+                id : product.id,
+                title : product.title,
+                img : product.img,
+                key : product.id + '&' + selectColor + '&' + selectSize,
+                color: selectColor,
+                size: selectSize,
+                price: product.price
+            }
 
         // check if product already in cart
         const index = cartItems.findIndex( item => item.product.key === cartProduct.key);

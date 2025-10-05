@@ -1,6 +1,8 @@
 const Cart = require('../models/Cart');
 const prisma = require('../prisma/prisma');
 
+
+
 const getCartByUserId = async (req, res, next) => {
     try {
         // Old

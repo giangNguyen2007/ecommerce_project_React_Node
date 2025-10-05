@@ -13,7 +13,7 @@ const registerUser = async (req, res) => {
     const {username, email, password } = req.body
 
     // encrypt password before registering in database
-    const encrypted_pw = CryptoJS.AES.encrypt(password, "gng").toString();
+    const encrypted_pw = CryptoJS.AES.encrypt(password, process.env.CRYPTO_SECRET).toString();
 
     try {
         // const savedUser = await User.create({ 

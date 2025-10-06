@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import './Navbar.css';
-import { Link } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import { SearchOutlined, ShoppingCartOutlined } from '@material-ui/icons'
 import { AuthContext } from '../../context/AuthContext';
 import { Badge } from '@material-ui/core';
@@ -15,6 +15,8 @@ const Navbar = (props: Props) => {
     const {user, dispatchAuth} = useContext(AuthContext);
     const [searchQuery, setSearchQuery] = useState('')
 
+    const navigate = useNavigate();
+
     const handleLogout = (e : React.MouseEvent<HTMLDivElement, MouseEvent>) => { 
         // remove user from storage
         localStorage.removeItem('user');
@@ -22,6 +24,8 @@ const Navbar = (props: Props) => {
         // dispatch logout action
         dispatchAuth({ type: 'LOG_OUT', payload: null }) ;
         dispatchCart({type: 'RESET_NULL'});
+
+        navigate('/');
      }
 
   return (
@@ -93,14 +97,14 @@ const Navbar = (props: Props) => {
                         </div>
                     </div>
 
-                   
-                    
 
-                    <Link to={`/cart`}>
+
+
+                    { user && <Link to={`/cart`}>
                         <Badge badgeContent={cartQuantity} color='primary' overlap="rectangular">
                             <div className='menu-item'> <ShoppingCartOutlined/> </div>
                         </Badge>
-                    </Link>
+                    </Link>}
                     
                 </div>
 

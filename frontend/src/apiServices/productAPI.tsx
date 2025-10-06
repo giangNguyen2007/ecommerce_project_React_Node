@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { baseRequest } from '../axios';
-import useChangeCart from './useChangeCart';
+import useChangeCart from '../customHooks/useChangeCart';
 import {IProduct, IProductComment, User } from '../Types';
 
 
@@ -53,7 +53,8 @@ const createProductComment = async (productId : string, user: User, content: str
 // fetch all products of one Category
 const fetchProductsByCategory = async (category : string) => { 
     try {
-        const res = await baseRequest.get<IProduct[]>(`product?category=${category}`)
+        console.log(`product/category?category=${category}`)
+        const res = await baseRequest.get<IProduct[]>(`product/category?category=${category}`)
         return res.data;
     } catch (error: any) {
         throw Error(error)    
@@ -64,7 +65,7 @@ const fetchProductsByCategory = async (category : string) => {
 const fetchProductsByTitleQuery = async (query : string) => { 
     try {
         const res = await baseRequest.get<IProduct[]>(`product/search/query?title=${query}`)
-        debugger;
+        // debugger;
         return res.data;
     } catch (error: any) {
         throw Error(error)    

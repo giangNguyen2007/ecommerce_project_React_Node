@@ -6,7 +6,7 @@ import PaymentButton from './CartPageComponents/PaymentButton';
 import { useNavigate } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';
 import { AuthContext } from '../../context/AuthContext';
-import { saveCart } from '../../customHooks/cartAPI';
+import { saveCart } from '../../apiServices/cartAPI';
 import { ICartProductBackend } from '../../Types';
 
 const CartPage = () => {

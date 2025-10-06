@@ -1,4 +1,4 @@
-const User = require('../models/User');
+
 const CryptoJS = require('crypto-js');
 const prisma = require('../prisma/prisma');
 

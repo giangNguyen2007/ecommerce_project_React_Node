@@ -1,14 +1,16 @@
 import './SelectAddCartModule.css'
-import React from 'react'
+import React, {useContext} from 'react'
 import { useState} from 'react'
 import Selector from '../Selector/Selector'
 import ColorAndSizeSelector from './ColorAndSizeSelector'
 import { IProduct } from '../../Types'
 import useQuantity from '../../customHooks/useQuantity'
 import useChangeCart from '../../customHooks/useChangeCart'
+import {AuthContext} from "../../context/AuthContext";
 
 const SelectAddCart = ({product} : {product : IProduct}) => {
 
+    const {user} = useContext(AuthContext);
     const [selectColor, setSelectColor] = useState<string | null>(null);
     const [selectSize, setSelectSize] = useState<string | null>(null);
     const {quantity, setQuantity, handleQuantity} = useQuantity();
@@ -44,7 +46,7 @@ const SelectAddCart = ({product} : {product : IProduct}) => {
             <button 
                     onClick={handleAddCart}
                     className="add-cart-btn" 
-                    disabled = {!selectColor || !selectSize}>
+                    disabled = {!user || !selectColor || !selectSize}>
                 Add Cart
             </button>
         </div>

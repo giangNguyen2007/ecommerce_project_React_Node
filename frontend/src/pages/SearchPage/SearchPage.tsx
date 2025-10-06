@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom'
 import ProductsList from '../../components/ProductCards/ProductsList';
 import Selector from '../../components/Selector/Selector';
 import { IProduct } from '../../Types';
-import { fetchProductsByTitleQuery } from '../../customHooks/productAPI';
+import { fetchProductsByTitleQuery } from '../../apiServices/productAPI';
 
 
 const SearchPage = () => {

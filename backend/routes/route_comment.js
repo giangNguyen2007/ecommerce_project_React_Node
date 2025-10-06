@@ -1,7 +1,6 @@
 const router = require('express').Router();
 exports.router = router;
 const {checkToken, checkAdmin, checkIdentity} = require('../middleware/checkToken');
-const User = require('../models/User');
 const CryptoJS = require('crypto-js');
 const prisma = require('../prisma/prisma');
 const { createComment, getCommentByProductId, deleteCommentByUserId, deleteCommentById } = require('../controllers/controller_comment');

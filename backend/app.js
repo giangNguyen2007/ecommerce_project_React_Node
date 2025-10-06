@@ -17,7 +17,7 @@ const app = express();
 
 //middleware
 app.use(cors({
-    origin:[ process.env.FRONTEND_URL , "https://foot-shopee-front.onrender.com", "https://sport-shopee-rev2.netlify.app"]
+    origin:[ process.env.FRONTEND_URL , "http://localhost:3000", "https://foot-shopee-front.onrender.com", "https://sport-shopee-rev2.netlify.app"]
 }))
 
 app.use(express.json())

@@ -18,6 +18,11 @@ const Login = () => {
 
       try {
         const response = await authenticate({username, email, password}, 'login');
+
+        if (response) {
+          // loadUserCart();
+          navigate('/');
+        }
       
       } catch (e){
         console.log(e)

@@ -1,4 +1,4 @@
-const Product = require('../models/Product');
+
 const prisma = require('../prisma/prisma');
 
 const createComment = async (req, res, next) => {

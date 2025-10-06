@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { baseRequest } from '../axios';
-import useChangeCart from './useChangeCart';
+import useChangeCart from '../customHooks/useChangeCart';
 import { ICartBackend, ICartProduct, ICartProductBackend, IProduct, User } from '../Types';
 
 

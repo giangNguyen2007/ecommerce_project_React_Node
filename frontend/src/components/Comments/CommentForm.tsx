@@ -3,7 +3,7 @@ import { AccountBoxRounded } from '@material-ui/icons'
 import { Rating } from '@mui/material'
 import React, { useContext, useState } from 'react'
 import { AuthContext } from '../../context/AuthContext'
-import { createProductComment, fetchtProductComment } from '../../customHooks/productAPI'
+import { createProductComment, fetchtProductComment } from '../../apiServices/productAPI'
 import { IProductComment } from '../../Types'
 
 type CommentFormProps = {

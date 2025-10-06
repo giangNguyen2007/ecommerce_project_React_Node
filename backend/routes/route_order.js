@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const { createOrder, updateOrderById, getOrdersByUserId, getAllOrders, deleteOrderById } = require('../controllers/controller_order');
 const {checkToken, checkAdmin, checkIdentity} = require('../middleware/checkToken');
-const Order = require('../models/Order');
 
 
 // CREATE - only user can create his/her order

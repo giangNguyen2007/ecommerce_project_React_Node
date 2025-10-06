@@ -6,7 +6,7 @@ import Selector from '../../components/Selector/Selector'
 import { categoriesData } from '../../data'
 import { adminRequest } from '../../axios'
 import { IProduct } from '../../Types'
-import { fetchProductsByCategory } from '../../customHooks/productAPI'
+import { fetchProductsByCategory } from '../../apiServices/productAPI'
 import ProductsListCarousel from '../../components/ProductCards/ProductsListCarousel'
 import SelectorPanel from '../../components/Selector/SelectorPanel'
 import { debug } from 'console'
@@ -26,6 +26,7 @@ const CategoryPage = () => {
         const fetchProducts = async () => { 
             
             try {
+
                 if(category !== undefined){
                     const fetchedProducts = await fetchProductsByCategory(category?.cat);
                     console.log(fetchedProducts)

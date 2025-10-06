@@ -1,7 +1,7 @@
 
 import React, { useContext, useState } from 'react';
 
-import { saveCart, fetchUserCart, fetchSingleProduct } from './cartAPI';
+import { saveCart, fetchUserCart, fetchSingleProduct } from '../apiServices/cartAPI';
 import { CartContext } from '../context/CartContext';
 import { AuthContext } from '../context/AuthContext';
 import { ICartBackend, ICartProduct, ICartProductBackend, IProduct, User } from '../Types';
